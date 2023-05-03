@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Titch - A Web App for the small tasks in life</title>
+  </head>
+  <body>
+    <section class="intro flow region">
+      <div class="wrapper">
+        <h1>Titch</h1>
+        <p>Just a titch of help from your friend</p>
+      </div>
+    </section>
+
+    <section class="randomizer wrapper flow">
+      <h2>Randomizer</h2>
+      <p>A machine that makes small decisions based on chance</p>
+      <form class="randomizer-form">
+        <label for="randomizer-input">Enter items</label>
+        <input
+          type="text"
+          name="input"
+          class="randomizer-form__input"
+          id="randomizer-input"
+        />
+        <button class="randomizer-form__btn" type="submit">Enter</button>
+      </form>
+
+      <div class="randomizer-list cluster"></div>
+
+      <button class="randomizer-btn">Randomize</button>
+      <p class="randomizer-output"></p>
+    </section>
+    <footer class="wrapper bg-dark color-light region">
+      <p>Built with 😁 and 🍵 by <a href="lebronconsulting.tech">Benjamin Lebron</a></p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
