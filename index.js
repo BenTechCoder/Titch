@@ -54,8 +54,14 @@ function removeItem(id) {
 }
 
 function randomize() {
-  const chosen = randomItemFromArray(itemArray, randomOutput.textContent);
-  randomOutput.textContent = chosen.content;
+  // gets all content from itemArray and puts it into a seperate one-dimensional array and then randomizing that array
+  const randomArray = [];
+  itemArray.forEach((item) => {
+    randomArray.push(item.content);
+  });
+  console.log(randomArray);
+  let chosen = randomItemFromArray(randomArray, randomOutput.textContent);
+  randomOutput.textContent = chosen;
 }
 
 function outputValueChecker() {
