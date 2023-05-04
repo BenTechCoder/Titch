@@ -2,8 +2,6 @@
 @import "blocks.css";
 @import "reset.css";
 
-
-
 :root {
   --fluid-min-width: 320;
   --fluid-max-width: 1140;
@@ -93,7 +91,9 @@ h4,
 h5 {
   max-width: 25ch;
   line-height: 1.2;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
   font-weight: normal;
 }
 
@@ -150,7 +150,9 @@ a:hover {
 body {
   font-size: var(--step-0);
   /* color: $secondary; */
-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
 }
 
 .icon {
@@ -164,13 +166,15 @@ strong {
   font-weight: 700;
 }
 
-
 :root {
   --fluid-min-width: 320;
   --fluid-max-width: 1140;
 
   --fluid-screen: 100vw;
-  --fluid-bp: calc((var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) / (var(--fluid-max-width) - var(--fluid-min-width)));
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
 }
 
 @media screen and (min-width: 1140px) {
@@ -180,39 +184,75 @@ strong {
 }
 
 :root {
-  --fc-xs-min: (var(--fc-s-min) * 0.75); 
+  --fc-xs-min: (var(--fc-s-min) * 0.75);
   --fc-xs-max: (var(--fc-s-max) * 0.75);
 
-  --fc-s-min: (var(--f-0-min, 16)); 
+  --fc-s-min: (var(--f-0-min, 16));
   --fc-s-max: (var(--f-0-max, 20));
 
-  --fc-m-min: (var(--fc-s-min) * 1.5); 
+  --fc-m-min: (var(--fc-s-min) * 1.5);
   --fc-m-max: (var(--fc-s-max) * 1.5);
 
-  --fc-l-min: (var(--fc-s-min) * 2); 
+  --fc-l-min: (var(--fc-s-min) * 2);
   --fc-l-max: (var(--fc-s-max) * 2);
 
-  --fc-xl-min: (var(--fc-s-min) * 3); 
+  --fc-xl-min: (var(--fc-s-min) * 3);
   --fc-xl-max: (var(--fc-s-max) * 3);
 
-  --fc-2xl-min: (var(--fc-s-min) * 4); 
+  --fc-2xl-min: (var(--fc-s-min) * 4);
   --fc-2xl-max: (var(--fc-s-max) * 4);
 
   /* T-shirt sizes */
-  --space-xs: calc(((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-xs-min)) * var(--fluid-bp));
-  --space-s: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-s-min)) * var(--fluid-bp));
-  --space-m: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-m-min)) * var(--fluid-bp));
-  --space-l: calc(((var(--fc-l-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-l-min)) * var(--fluid-bp));
-  --space-xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
-  --space-2xl: calc(((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-2xl-min)) * var(--fluid-bp));
-  
+  --space-xs: calc(
+    ((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-xs-max) - var(--fc-xs-min)) *
+      var(--fluid-bp)
+  );
+  --space-s: calc(
+    ((var(--fc-s-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-s-min)) *
+      var(--fluid-bp)
+  );
+  --space-m: calc(
+    ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-m-min)) *
+      var(--fluid-bp)
+  );
+  --space-l: calc(
+    ((var(--fc-l-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-l-min)) *
+      var(--fluid-bp)
+  );
+  --space-xl: calc(
+    ((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-xl-min)) *
+      var(--fluid-bp)
+  );
+  --space-2xl: calc(
+    ((var(--fc-2xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-2xl-min)) *
+      var(--fluid-bp)
+  );
+
   /* One-up pairs */
-  --space-xs-s: calc(((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-xs-min)) * var(--fluid-bp));
-  --space-s-m: calc(((var(--fc-s-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-s-min)) * var(--fluid-bp));
-  --space-m-l: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-m-min)) * var(--fluid-bp));
-  --space-l-xl: calc(((var(--fc-l-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-l-min)) * var(--fluid-bp));
-  --space-xl-2xl: calc(((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-xl-min)) * var(--fluid-bp));
+  --space-xs-s: calc(
+    ((var(--fc-xs-min) / 16) * 1rem) + (var(--fc-s-max) - var(--fc-xs-min)) *
+      var(--fluid-bp)
+  );
+  --space-s-m: calc(
+    ((var(--fc-s-min) / 16) * 1rem) + (var(--fc-m-max) - var(--fc-s-min)) *
+      var(--fluid-bp)
+  );
+  --space-m-l: calc(
+    ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-l-max) - var(--fc-m-min)) *
+      var(--fluid-bp)
+  );
+  --space-l-xl: calc(
+    ((var(--fc-l-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-l-min)) *
+      var(--fluid-bp)
+  );
+  --space-xl-2xl: calc(
+    ((var(--fc-xl-min) / 16) * 1rem) + (var(--fc-2xl-max) - var(--fc-xl-min)) *
+      var(--fluid-bp)
+  );
 
   /* Custom pairs */
-  --space-m-xl: calc(((var(--fc-m-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-m-min)) * var(--fluid-bp));
+  --space-m-xl: calc(
+    ((var(--fc-m-min) / 16) * 1rem) + (var(--fc-xl-max) - var(--fc-m-min)) *
+      var(--fluid-bp)
+  );
 }

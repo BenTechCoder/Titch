@@ -1,37 +1,37 @@
 .cluster {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space, 1rem);
-    justify-content: flex-start;
-    align-items: center;
-  }
-  
-  .flow > * + * {
-    margin-top: var(--flow-space, 1em);
-  }
-  
-  .with-sidebar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5em;
-  }
-  
-  .with-sidebar > :last-child {
-    flex-grow: 1;
-  }
-  
-  .with-sidebar > :first-child {
-    flex-basis: 0;
-    flex-grow: 999;
-    min-inline-size: 50%;
-  }
-  
-  /**
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.with-sidebar > :last-child {
+  flex-grow: 1;
+}
+
+.with-sidebar > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
+
+/**
  * REGION 
  * Add consistent vertical padding to create regions of content 
  * Can either be configured by setting --region-space or use a default from the space scale
  */
- .region {
+.region {
   padding-top: var(--region-space, var(--space-xl-2xl));
   padding-bottom: var(--region-space, var(--space-xl-2xl));
 }
@@ -41,7 +41,7 @@
  * Sets a max width, adds a consistent gutter and horizontally
  * centers the contents
  */
- .wrapper {
+.wrapper {
   width: 90vw;
   width: clamp(10rem, 90vw, 80rem);
   margin-left: auto;

@@ -1,25 +1,25 @@
 .randomizer {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .item {
-    color: white;
-    background-color: black;
-    padding: 1em;
-    margin: 1rem;
-  }
+  color: white;
+  background-color: black;
+  padding: 1em;
+  margin: 1rem;
+}
 
-  .intro {
-    background-color: black;
-    color: white;
-  }
+.intro {
+  background-color: black;
+  color: white;
+}
 
-  .randomizer-output {
-    padding: var(--space-m);
-    background-color: black;
-    color: white;
-    font-size: var(--step-3);
-    text-decoration: underline;
-    text-align: center;
-  }
+.randomizer-output {
+  padding: var(--space-m);
+  background-color: black;
+  color: white;
+  font-size: var(--step-3);
+  text-decoration: underline;
+  text-align: center;
+}
