@@ -4,11 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "tokens": "blyth tokens",
+    "start": "vite src",
+    "build": "vite build src",
     "preview": "vite preview"
   },
+  "blyth": {
+    "tokensOutputPath": "src/css/tokens.css",
+    "utilityOutputPath": "src/css/utility"
+  },
   "devDependencies": {
-    "vite": "^4.3.2"
+    "vite": "^4.3.2",
+    "vite-plugin-pwa": "^0.14.7"
   }
 }

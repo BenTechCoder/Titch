@@ -1,6 +1,7 @@
-@import "utils.css";
-@import "blocks.css";
-@import "reset.css";
+@import "./css/utils.css";
+@import "./css/blocks.css";
+@import "./css/reset.css";
+@import "./css/tokens.css";
 
 :root {
   --fluid-min-width: 320;
